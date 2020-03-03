@@ -1,0 +1,86 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed Aug 29 23:26:01 2018
+| Host         : DESKTOP-HS9MAEO running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file project_reti_logiche_control_sets_placed.rpt
+| Design       : project_reti_logiche
+| Device       : xc7a200t
+-------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    19 |
+| Unused register locations in slices containing registers |    34 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              12 |            6 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               5 |            1 |
+| Yes          | No                    | No                     |              22 |            8 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             151 |           39 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------+--------------------------+---------------------------------+------------------+----------------+
+|   Clock Signal   |       Enable Signal      |         Set/Reset Signal        | Slice Load Count | Bel Load Count |
++------------------+--------------------------+---------------------------------+------------------+----------------+
+|  i_clk_IBUF_BUFG | next_indirizzo           | next_indirizzo[2]_i_1_n_0       |                1 |              1 |
+|  i_clk_IBUF_BUFG | o_address[2]_i_1_n_0     |                                 |                2 |              3 |
+|  i_clk_IBUF_BUFG | o_done_i_1_n_0           |                                 |                2 |              3 |
+|  i_clk_IBUF_BUFG |                          | i_rst_IBUF                      |                1 |              5 |
+|  i_clk_IBUF_BUFG | min_colonna              | min_colonna[7]_i_1_n_0          |                2 |              8 |
+|  i_clk_IBUF_BUFG | max_colonna              | max_colonna[7]_i_1_n_0          |                2 |              8 |
+|  i_clk_IBUF_BUFG | max_riga[7]_i_2_n_0      | max_riga[7]_i_1_n_0             |                2 |              8 |
+|  i_clk_IBUF_BUFG | o_data[7]_i_1_n_0        |                                 |                2 |              8 |
+|  i_clk_IBUF_BUFG | num_righe[7]_i_2_n_0     | num_righe[7]_i_1_n_0            |                2 |              8 |
+|  i_clk_IBUF_BUFG | num_colonne[7]_i_2_n_0   | num_colonne[7]_i_1_n_0          |                2 |              8 |
+|  i_clk_IBUF_BUFG | valore_soglia[7]_i_1_n_0 |                                 |                2 |              8 |
+|  i_clk_IBUF_BUFG | uno                      | min_riga[7]_i_1_n_0             |                2 |              8 |
+|  i_clk_IBUF_BUFG |                          |                                 |                6 |             12 |
+|  i_clk_IBUF_BUFG | o_address[2]_i_1_n_0     | o_address[15]_i_1_n_0           |                4 |             13 |
+|  i_clk_IBUF_BUFG | next_num_colonne_tmp     | next_num_colonne_tmp[7]_i_1_n_0 |                4 |             14 |
+|  i_clk_IBUF_BUFG | next_num_righe_tmp       | next_num_righe_tmp[7]_i_1_n_0   |                3 |             14 |
+|  i_clk_IBUF_BUFG | prodotto[15]_i_2_n_0     | prodotto[15]_i_1_n_0            |                6 |             16 |
+|  i_clk_IBUF_BUFG | diff_colonne             | diff_colonne[7]_i_1_n_0         |                4 |             16 |
+|  i_clk_IBUF_BUFG | next_indirizzo           | next_indirizzo[15]_i_1_n_0      |                5 |             29 |
++------------------+--------------------------+---------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 3      |                     2 |
+| 5      |                     1 |
+| 8      |                     8 |
+| 12     |                     1 |
+| 13     |                     1 |
+| 14     |                     2 |
+| 16+    |                     3 |
++--------+-----------------------+
+
+

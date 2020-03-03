@@ -1,0 +1,111 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Aug  2 02:12:09 2018
+# Process ID: 10676
+# Current directory: C:/Users/Lorenzo/Desktop/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent952 C:\Users\Lorenzo\Desktop\project_1\project_1.xpr
+# Log file: C:/Users/Lorenzo/Desktop/project_1/vivado.log
+# Journal file: C:/Users/Lorenzo/Desktop/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Lorenzo/Desktop/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation -mode post-implementation -type timing
+source project_tb.tcl
+restart
+run all
+update_files -from_files C:/Users/Lorenzo/Downloads/testbench3.vhd -to_files C:/Users/Lorenzo/Downloads/testbench4.vhd -filesets [get_filesets *]
+update_files -from_files C:/Users/Lorenzo/Downloads/testbench4.vhd -to_files C:/Users/Lorenzo/Downloads/testbench3.vhd -filesets [get_filesets *]
+close_sim
+launch_simulation -mode post-implementation -type timing
+source project_tb.tcl
+restart
+run all
+launch_simulation
+source project_tb.tcl
+restart
+run all
+current_sim simulation_2
+close_sim
+launch_simulation -mode post-implementation -type timing
+source project_tb.tcl
+restart
+run all
+current_sim simulation_3
+current_sim simulation_4
+current_sim simulation_3
+current_sim simulation_4
+current_sim simulation_3
+current_sim simulation_4
+current_sim simulation_3
+update_files -from_files C:/Users/Lorenzo/Downloads/testbench.vhd -to_files C:/Users/Lorenzo/Downloads/testbench4.vhd -filesets [get_filesets *]
+current_sim simulation_4
+close_sim
+launch_simulation -mode post-implementation -type timing
+source project_tb.tcl
+restart
+run all
+update_files -from_files C:/Users/Lorenzo/Downloads/testbench4_delay.vhd -to_files C:/Users/Lorenzo/Downloads/testbench.vhd -filesets [get_filesets *]
+close_sim
+launch_simulation -mode post-implementation -type timing
+source project_tb.tcl
+restart
+run all
+update_files -from_files C:/Users/Lorenzo/Downloads/testbench3.vhd -to_files C:/Users/Lorenzo/Downloads/testbench4_delay.vhd -filesets [get_filesets *]
+close_sim
+launch_simulation -mode post-implementation -type timing
+source project_tb.tcl
+restart
+run all
+current_sim simulation_3
+close_sim
+launch_simulation
+source project_tb.tcl
+restart
+run all
+current_sim simulation_7
+close_sim
+launch_simulation -mode post-implementation -type timing
+source project_tb.tcl
+run all
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+close_sim
+launch_simulation -mode post-implementation -type timing
+source project_tb.tcl
+restart
+run all
+update_files -from_files C:/Users/Lorenzo/Downloads/testbench4.vhd -to_files C:/Users/Lorenzo/Downloads/testbench3.vhd -filesets [get_filesets *]
+close_sim
+launch_simulation -mode post-implementation -type timing
+source project_tb.tcl
+restart
+run all
+update_files -from_files C:/Users/Lorenzo/Downloads/testbench_delay.vhd -to_files C:/Users/Lorenzo/Downloads/testbench4.vhd -filesets [get_filesets *]
+close_sim
+launch_simulation -mode post-implementation -type timing
+source project_tb.tcl
+run all
+close_sim
+launch_simulation -mode post-implementation -type timing
+source project_tb.tcl
+run all
+update_files -from_files C:/Users/Lorenzo/Downloads/testbench3_delay.vhd -to_files C:/Users/Lorenzo/Downloads/testbench_delay.vhd -filesets [get_filesets *]
+close_sim
+launch_simulation -mode post-implementation -type timing
+source project_tb.tcl
+restart
+run all
+current_sim simulation_8
+close_sim
+launch_simulation
+source project_tb.tcl
+run all
+close_sim
+close_sim

@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../Downloads/testbench.vhd" \
+"../../../../../../Downloads/testbench4_delay.vhd" \
+
+# Do not sort compile order
+nosort
