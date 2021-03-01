@@ -1,5 +1,5 @@
 # Reti-Logiche-project-17-18
-This project has been developed as part of the "Reti Logiche" course at Politecnico di Milano, academic year 2017/2018. It is also considered as part of the bachelor degree thesis. All the project has been developed in italian, the code has been written in VHDL. This repo contains the code (project 1) as well as the code documentation and the specs.
+This project has been developed as part of the "Reti Logiche" course at Politecnico di Milano, academic year 2017/2018. It is also considered as part of the bachelor degree thesis. All the project has been developed in italian, the code has been written in VHDL. This repo contains the code (project 1) as well as the code documentation and the specifics.
 # Task
 The project consists in the implementation of an HW component which, given an image in grey scale pixels, computes the area of the minimal rectangle which completely includes an object in the image itself. "includes" means that aLl the pixels which are part of the object should be part of the rectangle as well( or at least be part of the perimeter).
 
